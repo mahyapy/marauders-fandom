@@ -1,0 +1,37 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Georgia', serif;
+}
+
+/* Container for text + image side by side */
+.universe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px;
+  gap: 40px;
+  background-color: #f5f0dc; /* Optional beige background for vibe */
+}
+
+/* Text part on the left */
+.universe-text {
+  flex: 1;
+  color: #7C0A02; /* dark red */
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+/* Image part on the right */
+.universe-image {
+  flex: 1;
+  max-width: 600px; /* control max size */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(124, 10, 2, 0.4);
+  object-fit: cover;
+}
