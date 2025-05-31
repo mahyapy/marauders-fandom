@@ -1,13 +1,18 @@
 body {
   background-color: #1a1a1a;
-  color: #8B0000;
+  color: #8B0000; /* Dark red */
   font-family: 'Georgia', serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 20%;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #8B0000;
+  line-height: 1.2;
 }
