@@ -1,70 +1,112 @@
 body {
-  background-color: #f5f5dc;
-  font-family: 'Georgia', serif;
-  color: #4c0000;
   margin: 0;
   padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f5f0dc;
+  color: #7C0A02;
 }
 
+/* Page container */
 .timeline-container {
-  padding: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-h1 {
+  padding: 60px 30px;
   text-align: center;
-  color: #4c0000;
-  font-size: 3em;
-  margin-bottom: 50px;
 }
 
+.timeline-container h1 {
+  font-size: 2.7em;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+/* Timeline vertical line */
 .timeline {
   position: relative;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px 0;
-  margin-left: 20px;
-  border-left: 4px solid #4c0000;
 }
 
-.timeline-item {
-  position: relative;
-  margin: 20px 0;
-  padding-left: 40px;
-}
-
-.circle {
-  width: 30px;
-  height: 30px;
-  background-color: #4c0000;
-  color: #f5f5dc;
-  font-weight: bold;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
+/* The vertical line */
+.timeline::after {
+  content: '';
   position: absolute;
-  left: -18px;
+  left: 50%;
   top: 0;
+  width: 4px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #7C0A02,
+    #7C0A02 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  transform: translateX(-50%);
 }
 
-.content {
-  background-color: #f5f5dc;
-  border: 2px solid #4c0000;
-  border-radius: 20px;
-  padding: 15px 20px;
-  font-size: 1.1em;
-  margin-bottom: 5px;
-  line-height: 1.5;
-  color: #4c0000;
+/* Each event */
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
 }
 
-.content::before {
-  content: "";
+/* Circles for the years */
+.circle {
+  background-color: #7C0A02;
+  color: #f5f0dc;
+  border: 3px solid #f5f0dc;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
   position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #4c0000 transparent transparent;
-  left: -10px;
-  top: 10px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Event text content */
+.content {
+  padding: 20px;
+  background-color: #f5f0dc;
+  border: 2px solid #7C0A02;
+  border-radius: 25px;
+  margin-top: 80px;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+/* Alternate side alignment */
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 8px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    text-align: left;
+  }
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  .circle {
+    left: 0;
+    transform: translateX(0);
+  }
 }
