@@ -83,3 +83,26 @@ h2 {
   color: #333;
 }
 
+.options-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.options-list li {
+  margin: 20px 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.options-list li a {
+  color: #7C0A02; /* Bordeaux red */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.options-list li a:hover {
+  color: #b2301f;
+  text-decoration: underline;
+}
+
