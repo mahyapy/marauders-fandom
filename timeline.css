@@ -1,0 +1,81 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Georgia', serif;
+  background-color: #f5f0dc;
+  color: #7C0A02;
+}
+
+/* Page container */
+.timeline-container {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+/* Title styling */
+.timeline-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+/* Timeline line container */
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+/* Dotted line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(
+    to right,
+    #7C0A02,
+    #7C0A02 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  z-index: 0;
+}
+
+/* Individual event container */
+.event {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 180px;
+  z-index: 1;
+}
+
+/* The dot */
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: #7C0A02;
+  border: 3px solid #f5f0dc;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  z-index: 2;
+}
+
+/* Text under each dot */
+.event p {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0;
+}
