@@ -5,15 +5,18 @@
   <title>Marauders Map</title>
   <link rel="stylesheet" href="styles.css">
   <script>
-    // Check if visitor has already sworn they're up to no good
     if (!localStorage.getItem("mischiefManaged")) {
       setTimeout(function() {
-        // Set the flag to avoid showing it again
         localStorage.setItem("mischiefManaged", "true");
         window.location.href = "mischief.html";
       }, 2000);
     }
   </script>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marauders Map</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <h1>Welcome, fellow Marauder!</h1>
