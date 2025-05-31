@@ -1,44 +1,43 @@
-/* Reset and basic styling */
+/* Make sure html and body take full viewport size */
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
   font-family: 'Georgia', serif;
 }
 
-/* Body uses flexbox for centering */
+/* Body centers content */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Container centers text */
+/* Container with text centered and above background */
 .container {
   text-align: center;
-  color: #7C0A02;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px white;
-  z-index: 10;  /* Make sure text is above background */
   position: relative;
+  z-index: 10;
+  color: #7C0A02; /* Bordeaux red */
+  font-weight: bold;
+  text-shadow: 1px 1px 3px white; /* makes text pop */
 }
 
-/* Background image for map page */
+/* Background image styles */
 .map-page {
-  background-image: url("https://i.ebayimg.com/00/s/OTAwWDE2MDA=/z/-VQAAOSwCU1YouKg/$_57.JPG?set_id=8800005007");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-  /* Make sure the background fills whole viewport */
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  background-image: url("https://i.ebayimg.com/00/s/OTAwWDE2MDA=/z/-VQAAOSwCU1YouKg/$_57.JPG?set_id=8800005007");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 0;
 }
+
 
 
 
