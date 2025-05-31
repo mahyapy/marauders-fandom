@@ -51,3 +51,11 @@ h2 {
   background-color: #e0e0c0;
   color: #333;
 }
+
+/* Background image for map page */
+.map-page {
+  background-image: url('https://i.ebayimg.com/00/s/OTAwWDE2MDA=/z/-VQAAOSwCU1YouKg/$_57.JPG?set_id=8800005007'); /* Example image link */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
