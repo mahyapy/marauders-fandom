@@ -5,14 +5,13 @@
   <title>Marauders Map</title>
   <link rel="stylesheet" href="styles.css">
   <script>
-    // Check if they've already sworn they're up to no good
-    window.onload = function() {
-      if (!localStorage.getItem('mischiefManaged')) {
-        // If not, redirect after 2 seconds
-        setTimeout(function() {
-          window.location.href = "mischief.html";
-        }, 2000);
-      }
+    // Check if visitor has already sworn they're up to no good
+    if (!localStorage.getItem("mischiefManaged")) {
+      setTimeout(function() {
+        // Set the flag to avoid showing it again
+        localStorage.setItem("mischiefManaged", "true");
+        window.location.href = "mischief.html";
+      }, 2000);
     }
   </script>
 </head>
