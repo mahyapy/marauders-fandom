@@ -87,7 +87,7 @@ body {
   text-align: right;
 }
 
-.timeline-item:nth-child(even) {
+.timeline-item:nth-child(odd) {
   left: 50%;
   text-align: left;
 }
