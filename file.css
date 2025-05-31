@@ -1,17 +1,7 @@
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;  
-  align-items: center;    
-  background-color: #1a1a1a;
-  font-family: 'Georgia', serif;
-  text-align: center;
-}
-
 h1 {
-  font-size: 6rem;         
+  font-size: 6rem;
   font-weight: bold;
-  color: #8B0000;         
+  color: #8B0000;
   line-height: 1.2;
+  text-shadow: 0 0 8px #8B0000, 0 0 20px #660000;
 }
