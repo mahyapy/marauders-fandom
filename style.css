@@ -112,3 +112,22 @@ h2 {
   color: #f5f0dc;
   cursor: pointer;
 }
+
+
+.bubble-link {
+  display: inline-block;
+  background-color: #f5f0dc; /* beige bubble */
+  color: #7C0A02;            /* dark red */
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 2em;            /* match option size or adjust */
+}
+
+.bubble-link:hover {
+  background-color: #7C0A02;
+  color: #f5f0dc;
+  cursor: pointer;
+}
