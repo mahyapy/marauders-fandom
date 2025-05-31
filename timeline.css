@@ -65,10 +65,10 @@ body {
   font-size: 1.2em;
   position: absolute;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   z-index: 1;
 }
+
 
 /* Event text content */
 .content {
@@ -82,15 +82,13 @@ body {
 }
 
 /* Alternate side alignment */
-.timeline-item:nth-child(odd) {
+.timeline-item {
   left: 0;
-  text-align: right;
+  text-align: left;
+  width: 100%;
+  padding-left: 80px;
 }
 
-.timeline-item:nth-child(odd) {
-  left: 50%;
-  text-align: left;
-}
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
@@ -115,11 +113,9 @@ body {
 .timeline::after {
   content: '';
   position: absolute;
-  left: 50%;
+  left: 30px;
   top: 0;
   width: 4px;
   height: 100%;
   background-color: #7C0A02;
-  transform: translateX(-50%);
 }
-
