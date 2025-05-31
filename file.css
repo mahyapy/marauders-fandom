@@ -12,30 +12,32 @@ body {
 .container {
   color: #8B0000;
   text-align: center;
+  max-width: 90%;
 }
 
 h1 {
-  font-size: 8rem;
-  font-weight: 900;
+  font-size: 12rem; /* absolutely massive */
+  font-weight: 1000; /* max boldness */
   color: #8B0000;
-  margin-bottom: 30px;
-  text-shadow: 0 0 10px #5a0000;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px #5a0000;
 }
 
 p {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 5rem; /* much bigger */
+  font-weight: 800;
   color: #8B0000;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  text-shadow: 0 0 15px #5a0000;
 }
 
 button {
-  font-size: 2rem;
-  padding: 20px 40px;
+  font-size: 3rem; /* larger button text */
+  padding: 30px 60px;
   background-color: #8B0000;
   color: #fff;
   border: none;
-  border-radius: 12px;
+  border-radius: 15px;
   cursor: pointer;
   font-family: 'Georgia', serif;
   font-weight: bold;
@@ -44,6 +46,6 @@ button {
 
 button:hover {
   background-color: #5a0000;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
