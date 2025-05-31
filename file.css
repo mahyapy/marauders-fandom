@@ -1,51 +1,41 @@
 body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1a1a1a;
-  font-family: 'Georgia', serif;
-  text-align: center;
+    background-color: #1c1c1c;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
 }
 
 .container {
-  color: #8B0000;
-  text-align: center;
-  max-width: 90%;
+    text-align: center;
+    margin-top: 20%;
 }
 
 h1 {
-  font-size: 12rem; /* absolutely massive */
-  font-weight: 1000; /* max boldness */
-  color: #8B0000;
-  margin-bottom: 40px;
-  text-shadow: 0 0 20px #5a0000;
+    color: #7C0A02; /* Bordeaux Red */
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
-p {
-  font-size: 5rem; /* much bigger */
-  font-weight: 800;
-  color: #8B0000;
-  margin-bottom: 60px;
-  text-shadow: 0 0 15px #5a0000;
+h2 {
+    color: #ddd;
+    font-size: 1.5em;
+    margin-bottom: 2em;
 }
 
-button {
-  font-size: 3rem; /* larger button text */
-  padding: 30px 60px;
-  background-color: #8B0000;
-  color: #fff;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-family: 'Georgia', serif;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.marauder-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f5f5dc; /* Beige */
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover {
-  background-color: #5a0000;
-  transform: scale(1.08);
+.marauder-button:hover {
+    background-color: #e0e0c0;
+    color: #333;
 }
-
