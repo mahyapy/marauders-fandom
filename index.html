@@ -5,13 +5,14 @@
   <title>Marauders Map</title>
   <link rel="stylesheet" href="styles.css" />
   <script>
-    // Redirect to mischief.html after 2 seconds, only once per visitor
-    if (!localStorage.getItem("mischiefManaged")) {
-      setTimeout(function() {
-        localStorage.setItem("mischiefManaged", "true");
-        window.location.href = "mischief.html";
-      }, 2000);
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+      if (!localStorage.getItem("mischiefManaged")) {
+        setTimeout(function() {
+          localStorage.setItem("mischiefManaged", "true");
+          window.location.href = "mischief.html";
+        }, 2000);
+      }
+    });
   </script>
 </head>
 <body>
