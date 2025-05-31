@@ -2,61 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marauders' Welcome</title>
+  <title>Marauders Map</title>
   <style>
     body {
-      background-color: #1c1c1c;
-      color: #8B0000;
-      font-family: 'Garamond', serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    h1 {
-      font-size: 3em;
+      background-color: #1a1a1a;
+      color: #8B0000; /* Dark red */
+      font-family: 'Georgia', serif;
       text-align: center;
-      margin-bottom: 50px;
+      padding-top: 20%;
+    }
+    h1 {
+      font-size: 3rem;
       font-weight: bold;
-    }
-
-    .button {
-      background-color: transparent;
-      border: 2px solid #8B0000;
       color: #8B0000;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      border-radius: 10px;
-      transition: all 0.3s ease;
     }
-
-    .button:hover {
-      background-color: #8B0000;
-      color: #fff;
-    }
-
   </style>
 </head>
 <body>
-
   <h1>Welcome, fellow Marauder!<br>You must swear that you're up to no good!</h1>
-
-  <button class="button" onclick="openPage()">I solemnly swear I'm up to no good.</button>
-
-  <script>
-    function openPage() {
-      // replace 'main.html' with your actual page
-      window.location.href = 'main.html';
-    }
-  </script>
-
 </body>
 </html>
-
