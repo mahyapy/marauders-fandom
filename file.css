@@ -1,7 +1,40 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.container {
+  color: #8B0000;
+}
+
 h1 {
   font-size: 6rem;
   font-weight: bold;
-  color: #8B0000;
-  line-height: 1.2;
-  text-shadow: 0 0 8px #8B0000, 0 0 20px #660000;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #8B0000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+}
+
+button:hover {
+  background-color: #660000;
 }
