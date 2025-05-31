@@ -1,4 +1,4 @@
-/* General Page Styling */
+/* Global page settings */
 body {
   background-color: #1c1c1c;
   margin: 0;
@@ -15,22 +15,23 @@ body {
   text-align: center;
 }
 
-/* Title styling */
-h1 {
+/* Title and subtitle styles */
+h1, h2 {
   color: #7C0A02; /* Bordeaux Red */
-  font-size: 3em;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Subtitle styling */
+h1 {
+  font-size: 3em;
+}
+
 h2 {
-  color: #ddd;
-  font-size: 1.5em;
-  margin-bottom: 2em;
+  font-size: 1.8em;
 }
 
-/* Button bubble style */
+/* Button style */
 .marauder-button {
   display: inline-block;
   padding: 15px 30px;
@@ -38,19 +39,15 @@ h2 {
   color: #000;
   text-decoration: none;
   border: 2px solid #000;
-  border-radius: 50px; /* This makes it bubble-like */
+  border-radius: 50px; /* Makes it a bubble */
   font-size: 1.2em;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
 }
 
 /* Button hover effect */
 .marauder-button:hover {
   background-color: #e0e0c0;
   color: #333;
-}
-
-.marauder-button:hover {
-    background-color: #e0e0c0;
-    color: #333;
 }
