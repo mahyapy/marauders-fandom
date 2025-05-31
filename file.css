@@ -1,16 +1,21 @@
+/* Overall page style */
 body {
     background-color: #1c1c1c;
-    color: #000;
     margin: 0;
     padding: 0;
     font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+/* Center container */
 .container {
     text-align: center;
-    margin-top: 20%;
 }
 
+/* Title */
 h1 {
     color: #7C0A02; /* Bordeaux Red */
     font-size: 3em;
@@ -18,12 +23,14 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+/* Subtitle */
 h2 {
     color: #ddd;
     font-size: 1.5em;
     margin-bottom: 2em;
 }
 
+/* Button style */
 .marauder-button {
     display: inline-block;
     padding: 15px 30px;
@@ -33,6 +40,12 @@ h2 {
     border-radius: 30px;
     font-size: 1.2em;
     transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.marauder-button:hover {
+    background-color: #e0e0c0;
+    color: #333;
 }
 
 .marauder-button:hover {
