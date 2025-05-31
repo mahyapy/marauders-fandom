@@ -4,46 +4,50 @@ body {
   font-family: 'Georgia', serif;
   background-color: #f5f0dc;
   color: #7C0A02;
-  text-align: center;
 }
 
 h1 {
   font-size: 3em;
   margin-bottom: 40px;
   font-weight: bold;
+  text-align: center;
 }
 
 .characters-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 60px;
 }
 
+/* Character bubbles aligned left */
 .character-bubble {
   display: flex;
   align-items: center;
   background-color: #f5f0dc;
   border: 3px solid #7C0A02;
-  border-radius: 50px;
+  border-radius: 15px;
   padding: 20px 30px;
   text-decoration: none;
   color: #7C0A02;
   font-size: 1.4em;
   font-weight: bold;
   transition: all 0.3s ease;
-  width: 350px;
+  width: 380px;
 }
 
+/* Square icons */
 .character-bubble img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
   object-fit: cover;
   margin-right: 20px;
   border: 2px solid #7C0A02;
 }
 
+/* Hover effect */
 .character-bubble:hover {
   background-color: #7C0A02;
   color: #f5f0dc;
