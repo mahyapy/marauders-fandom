@@ -1,51 +1,53 @@
-/* Overall page style */
+/* General Page Styling */
 body {
-    background-color: #1c1c1c;
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: #1c1c1c;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Center container */
+/* Centering container */
 .container {
-    text-align: center;
+  text-align: center;
 }
 
-/* Title */
+/* Title styling */
 h1 {
-    color: #7C0A02; /* Bordeaux Red */
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+  color: #7C0A02; /* Bordeaux Red */
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
-/* Subtitle */
+/* Subtitle styling */
 h2 {
-    color: #ddd;
-    font-size: 1.5em;
-    margin-bottom: 2em;
+  color: #ddd;
+  font-size: 1.5em;
+  margin-bottom: 2em;
 }
 
-/* Button style */
+/* Button bubble style */
 .marauder-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #f5f5dc; /* Beige */
-    color: #000;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 1.2em;
-    transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #f5f5dc; /* Beige */
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 50px; /* This makes it bubble-like */
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover effect */
+/* Button hover effect */
 .marauder-button:hover {
-    background-color: #e0e0c0;
-    color: #333;
+  background-color: #e0e0c0;
+  color: #333;
 }
 
 .marauder-button:hover {
