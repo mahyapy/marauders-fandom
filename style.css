@@ -1,6 +1,9 @@
 /* Global page settings */
 body {
-  background-color: #1c1c1c;
+  background-image: url('https://i.imgur.com/fd8iJWV.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   font-family: 'Georgia', serif;
@@ -8,6 +11,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
 }
 
 /* Centering container */
@@ -52,10 +57,3 @@ h2 {
   color: #333;
 }
 
-/* Background image for map page */
-.map-page {
-  background-image: url('https://i.ebayimg.com/00/s/OTAwWDE2MDA=/z/-VQAAOSwCU1YouKg/$_57.JPG?set_id=8800005007'); /* Example image link */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
