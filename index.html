@@ -5,13 +5,18 @@
   <title>Marauders Map</title>
   <link rel="stylesheet" href="styles.css">
   <script>
-    // Redirect to mischief.html after 2 seconds
-    setTimeout(function() {
-      window.location.href = "mischief.html";
-    }, 2000);
+    // Check if they've already sworn they're up to no good
+    window.onload = function() {
+      if (!localStorage.getItem('mischiefManaged')) {
+        // If not, redirect after 2 seconds
+        setTimeout(function() {
+          window.location.href = "mischief.html";
+        }, 2000);
+      }
+    }
   </script>
 </head>
 <body>
-  <h1>Welcome, fellow Marauder!<br><br>You must swear that you're up to no good!</h1>
+  <h1>Welcome, fellow Marauder!<br>You must swear that you're up to no good!</h1>
 </body>
 </html>
