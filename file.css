@@ -11,30 +11,39 @@ body {
 
 .container {
   color: #8B0000;
+  text-align: center;
 }
 
 h1 {
-  font-size: 6rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 8rem;
+  font-weight: 900;
+  color: #8B0000;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #5a0000;
 }
 
 p {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8B0000;
+  margin-bottom: 50px;
 }
 
 button {
-  font-size: 1.5rem;
-  padding: 15px 30px;
+  font-size: 2rem;
+  padding: 20px 40px;
   background-color: #8B0000;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   font-family: 'Georgia', serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #660000;
+  background-color: #5a0000;
+  transform: scale(1.05);
 }
+
