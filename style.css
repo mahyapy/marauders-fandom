@@ -85,20 +85,29 @@ h2 {
 
 
 
-/* Style links with beige bubble and dark red text */
-a {
-  display: inline-block;
-  background-color: #f5f0dc;      /* Beige bubble */
-  color: #7C0A02;                 /* Dark Bordeaux red */
+.options-list {
+  list-style-type: none;  /* removes dots */
+  padding: 0;
+  margin-top: 40px;
+}
+
+.options-list li {
+  margin: 20px 0;
+  font-size: 2em;        /* bigger font size */
   font-weight: bold;
-  padding: 10px 20px;
+}
+
+.options-list li a {
+  display: inline-block;         /* for padding and bubble */
+  background-color: #f5f0dc;     /* beige bubble */
+  color: #7C0A02;                /* dark red */
+  padding: 12px 24px;
   border-radius: 15px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* On hover, invert colors for effect */
-a:hover {
+.options-list li a:hover {
   background-color: #7C0A02;
   color: #f5f0dc;
   cursor: pointer;
