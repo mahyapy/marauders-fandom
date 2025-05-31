@@ -1,15 +1,45 @@
+/* Reset and basic styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Georgia', serif;
+}
+
+/* Body uses flexbox for centering */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container centers text */
+.container {
+  text-align: center;
+  color: #7C0A02;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px white;
+  z-index: 10;  /* Make sure text is above background */
+  position: relative;
+}
+
+/* Background image for map page */
 .map-page {
   background-image: url("https://i.ebayimg.com/00/s/OTAwWDE2MDA=/z/-VQAAOSwCU1YouKg/$_57.JPG?set_id=8800005007");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+  
+  /* Make sure the background fills whole viewport */
   position: fixed;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
   z-index: 0;
 }
+
 
 
 /* Centering container */
